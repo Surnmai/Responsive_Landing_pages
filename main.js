@@ -37,3 +37,18 @@ bottles.forEach(function(item){
         }
     })
 })
+
+//Navigation Toggle
+const navToggle = document.querySelector('.navToggle')
+const dropNav = document.querySelector('.dropNav')
+Nav(navToggle, dropNav)
+// navToggle.addEventListener('click', function(){
+//     navToggle.classList.toggle('active')
+// })
+
+function Nav(a, b){
+    a.addEventListener('click', function(){
+        a.classList.toggle('active')
+        b.classList.toggle('active')
+    })
+}
